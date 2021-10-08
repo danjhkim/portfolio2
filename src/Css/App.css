@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: Montserrat, Ubuntu, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+}
+
+.section1 {
+  background-color: white;
+}
