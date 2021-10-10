@@ -5,13 +5,13 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import '../../Sass/Header.scss';
-gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const Header = () => {
+	gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+
 	const enter = useCallback(() => {
 		const texthead = gsap.utils.toArray('.navMenu span');
 
-		console.log('enter');
 		gsap.to('.bar_container', {
 			backgroundColor: '#f6f6f6',
 			boxShadow: '0 -1px 6px 0 rgb(0 0 0 / 35%)',
@@ -27,7 +27,6 @@ const Header = () => {
 	const leave = useCallback(() => {
 		const texthead = gsap.utils.toArray('.navMenu span');
 
-		console.log('leave');
 		gsap.to('.bar_container', {
 			backgroundColor: 'transparent',
 			boxShadow: 'none',
