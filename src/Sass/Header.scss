@@ -1,5 +1,5 @@
 $small: 300px;
-$medium: 600px;
+$medium: 630px;
 $large: 900px;
 $xlarge: 1200px;
 $xxlarge: 1920px;
@@ -31,7 +31,7 @@ $xxlarge: 1920px;
 	height: 70px;
 	-webkit-font-smoothing: antialiased;
 	font-size: 22px;
-	@media screen and (max-width: $medium) {
+	@media screen and (max-width: 460px) {
 		font-size: 15px;
 	}
 	span {
@@ -54,7 +54,7 @@ $xxlarge: 1920px;
 			padding: 0 20px;
 		}
 
-		@media screen and (max-width: 330px) {
+		@media screen and (max-width: 340px) {
 			padding: 0 10px;
 		}
 	}

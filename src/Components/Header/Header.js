@@ -42,7 +42,7 @@ const Header = () => {
 	useEffect(() => {
 		ScrollTrigger.create({
 			trigger: '.about',
-			start: 'top 95%',
+			start: 'top 85%',
 			toggleActions: 'play reverse play reverse',
 			onEnter: () => enter(),
 			onLeaveBack: () => leave(),

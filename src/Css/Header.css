@@ -26,7 +26,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 22px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 460px) {
   .navMenu {
     font-size: 15px;
   }
@@ -46,12 +46,12 @@
 .navMenu span:hover {
   border-bottom: 3px solid grey;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
   .navMenu span {
     padding: 0 20px;
   }
 }
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 340px) {
   .navMenu span {
     padding: 0 10px;
   }

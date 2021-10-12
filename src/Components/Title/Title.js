@@ -1,12 +1,35 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { TextPlugin } from 'gsap/TextPlugin';
 import lottie from 'lottie-web';
 
 import '../../Sass/Title.scss';
 import danlogo from '../../images/animation/logo.json';
 
 const Title = () => {
-	const [animate, setAnimate] = useState();
+	gsap.registerPlugin(TextPlugin);
+
 	const logo = useRef();
+
+	useEffect(() => {
+		gsap.to('.subtext', {
+			y: 150,
+			opacity: 0,
+			duration: 0,
+		});
+
+		gsap.to('.subtext', {
+			y: 0,
+			opacity: 1,
+			duration: 0.8,
+		});
+		gsap.to('.emailtext', {
+			duration: 1,
+			text: 'danjhkim@gmail.com',
+			ease: 'none',
+			delay: 2,
+		});
+	}, []);
 
 	useEffect(() => {
 		const danLogoAnimation = lottie.loadAnimation({
@@ -16,14 +39,14 @@ const Title = () => {
 			autoplay: false,
 			animationData: danlogo,
 			rendererSettings: {
-				preserveAspectRatio: 'xMidYMid',
+				preserveAspectRatio: 'xMinYMin slice',
 			},
 		});
 
 		setTimeout(() => {
 			danLogoAnimation.setSpeed(0.9);
 			danLogoAnimation.play();
-		}, 500);
+		}, 1000);
 	}, []);
 
 	return (
@@ -36,6 +59,7 @@ const Title = () => {
 					<span>Cannoli fan</span>
 				</div>
 			</div>
+			<div className='emailtext'></div>
 
 			<div className='title'></div>
 			<div className='backdrop'></div>
