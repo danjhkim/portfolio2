@@ -6,6 +6,7 @@ body {
   overflow-y: scroll;
 }
 
-.section1 {
+.section1,
+.section2 {
   background-color: white;
 }

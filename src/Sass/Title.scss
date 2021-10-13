@@ -4,6 +4,10 @@ $large: 900px;
 $xlarge: 1200px;
 $xxlarge: 1920px;
 
+.titleMain {
+	position: relative;
+}
+
 .fullscreen {
 	width: 100%;
 	height: 100vh;
@@ -12,17 +16,28 @@ $xxlarge: 1920px;
 	align-items: center;
 }
 
-.title {
-	background-image: url('../images/31189.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+.background {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	right: 0;
 	width: 100%;
 	height: 100vh;
 }
 
+.title {
+	z-index: 1;
+	position: absolute;
+	background-image: url('../images/31189.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 120vh;
+}
+
 .backdrop {
-	z-index: 3;
+	z-index: 2;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -75,7 +90,7 @@ $xxlarge: 1920px;
 	align-items: center;
 	justify-content: space-around;
 	font-size: 2em;
-	color: white;
+	color: #d9d7fd;
 	width: 100%;
 	@media screen and (max-width: $medium) {
 		font-size: 1.5em;
@@ -88,12 +103,27 @@ $xxlarge: 1920px;
 	}
 }
 
-.emailtext {
+.flowupemail {
 	margin-bottom: 3em;
 	position: absolute;
 	align-self: flex-end;
-	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0.5em;
+}
+
+.emailtext {
+	text-align: center;
+	color: #d9d7fd;
 	font-size: 1.5rem;
+	line-height: 14px;
 	@media screen and (max-width: $medium) {
 		font-size: 1em;
 	}

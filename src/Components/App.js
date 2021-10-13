@@ -1,27 +1,14 @@
-import React, { useEffect, useCallback } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { gsap } from 'gsap';
-
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import '../Sass/App.scss';
 
 import Header from './Header/Header';
 import Title from './Title/Title';
 import About from './About/About';
+import Socials from './Socials/Socials';
 
 function App() {
-	useEffect(() => {
-		gsap.utils.toArray('.panel').forEach((panel, i) => {
-			ScrollTrigger.create({
-				trigger: panel,
-				start: 'top top',
-				pin: true,
-				pinSpacing: false,
-			});
-		});
-	}, []);
-
 	return (
 		<Router>
 			<div className='App'>
@@ -31,6 +18,10 @@ function App() {
 						<Title />
 					</section>
 					<section className='panel section1'>
+						<Socials />
+						<About />
+					</section>
+					<section className='panel section2'>
 						<About />
 					</section>
 				</div>
