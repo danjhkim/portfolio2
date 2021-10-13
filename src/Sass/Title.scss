@@ -107,9 +107,14 @@ $xxlarge: 1920px;
 	margin-bottom: 3em;
 	position: absolute;
 	align-self: flex-end;
+}
+
+.emaillink {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .icon {

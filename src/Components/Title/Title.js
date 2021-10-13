@@ -1,16 +1,21 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import lottie from 'lottie-web';
 
 import '../../Sass/Title.scss';
+
 import email from '../../images/icons/email.svg';
 import danlogo from '../../images/animation/logo.json';
 
 const Title = () => {
 	gsap.registerPlugin(TextPlugin, ScrollTrigger);
 	const logo = useRef();
+
+	const mailer = () => {
+		window.open('mailto:danjhkim@gmail.com');
+	};
 
 	useEffect(() => {
 		ScrollTrigger.create({
@@ -53,17 +58,17 @@ const Title = () => {
 		gsap.to('.flowupemail', {
 			y: 0,
 			opacity: 1,
-			delay: 1.5,
+			delay: 1.8,
 		});
 
 		gsap.to('.emailtext', {
 			duration: 0.9,
 			text: 'danjhkim@gmail.com',
 			ease: 'none',
-			delay: 2.5,
+			delay: 2.7,
 			onComplete: () => {
 				gsap.to('.backdrop', {
-					opacity: 0,
+					opacity: 0.1,
 					duration: 8,
 				});
 			},
@@ -100,10 +105,12 @@ const Title = () => {
 					</div>
 				</div>
 				<div className='flowupemail'>
-					<div className='icon'>
-						<img src={email} alt='email'></img>
+					<div className='emaillink' onClick={mailer}>
+						<div className='icon'>
+							<img src={email} alt='email'></img>
+						</div>
+						<div className='emailtext'></div>
 					</div>
-					<div className='emailtext'></div>
 				</div>
 			</div>
 			<div className='background panel2'>

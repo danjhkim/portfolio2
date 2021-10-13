@@ -6,3 +6,60 @@
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.about {
+	display: flex;
+	padding: 120px 30px 60px;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	@media only screen and (max-width: 600px) {
+		padding: 80px 10px;
+	}
+}
+
+.aboutMe {
+	box-sizing: border-box;
+	h2 {
+		margin: 0 0 80px 0;
+		font-family: 'Playfair Display, sans-serif';
+		margin: 0;
+		font-size: 70px;
+		font-weight: 300;
+		color: #073b7f;
+	}
+}
+
+.aboutItem {
+	margin: 50px 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.iconContainer {
+	width: 90px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		height: 70px;
+	}
+}
+
+.itemText {
+	margin-left: 50px;
+	h3 {
+		font-size: 30px;
+		margin: 0 0 15px;
+		font-weight: 300;
+	}
+
+	h4 {
+		font-size: 20px;
+		margin: 0;
+		font-weight: 300;
+	}
+}

@@ -19,7 +19,6 @@ function App() {
 					</section>
 					<section className='panel section1'>
 						<Socials />
-						<About />
 					</section>
 					<section className='panel section2'>
 						<About />
