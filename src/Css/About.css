@@ -30,6 +30,11 @@
   font-weight: 300;
   color: #073b7f;
 }
+.aboutMe *:hover * {
+  stroke: #d8d8d8;
+  fill: #d8d8d8;
+  color: #d8d8d8;
+}
 
 .aboutItem {
   margin: 50px 0;
@@ -45,9 +50,6 @@
   justify-content: center;
   align-items: center;
 }
-.iconContainer img {
-  height: 70px;
-}
 
 .itemText {
   margin-left: 50px;
@@ -61,4 +63,19 @@
   font-size: 20px;
   margin: 0;
   font-weight: 300;
+}
+
+.school {
+  width: 70px;
+  height: auto;
+}
+
+.webber {
+  width: 60px;
+  height: auto;
+}
+
+.projects {
+  width: 55px;
+  height: auto;
 }

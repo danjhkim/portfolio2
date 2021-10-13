@@ -57,3 +57,51 @@
 	width: 5em;
 	margin-top: 0.4em;
 }
+
+@media only screen and (max-width: 950px) {
+	.resumetext {
+		display: none;
+	}
+
+	.github {
+		width: 1.5em;
+		margin-top: 0.2em;
+	}
+
+	.linktext {
+		display: none;
+	}
+
+	.Linked {
+		margin-left: 0;
+		width: 1.4em;
+	}
+
+	.insta {
+		width: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.resume {
+		width: 0.8em;
+	}
+
+	.github {
+		width: 1em;
+		margin-top: 0.2em;
+	}
+
+	.linktext {
+		display: none;
+	}
+
+	.Linked {
+		margin-left: 0;
+		width: 1em;
+	}
+
+	.insta {
+		width: 1em;
+	}
+}

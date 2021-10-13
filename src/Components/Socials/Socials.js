@@ -4,8 +4,10 @@ import '../../Sass/Socials.scss';
 
 import resume from '../../images/icons/resume.svg';
 import github from '../../images/icons/github.svg';
+import gitSmall from '../../images/icons/githubSmall.svg';
 import linkedin from '../../images/icons/linked.svg';
 import insta from '../../images/icons/insta.svg';
+import instaSmall from '../../images/icons/instaSmall.svg';
 
 const Socials = () => {
 	return (
@@ -17,13 +19,19 @@ const Socials = () => {
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img src={resume} alt='resume' className='resume' />
-						<div className='textsocial'>Resume</div>
+						<div className='textsocial resumetext'>Resume</div>
 					</a>
 					<a
 						href='https://github.com/danjhkim?tab=repositories'
 						target='_blank'
 						rel='noopener noreferrer'>
-						<img src={github} alt='github' className='github' />
+						<picture>
+							<source
+								media='(max-width: 950px)'
+								srcSet={gitSmall}
+							/>
+							<img src={github} alt='github' className='github' />
+						</picture>
 						<div className='textsocial'></div>
 					</a>
 					<a
@@ -37,7 +45,13 @@ const Socials = () => {
 						href='https://www.instagram.com/danielkim165/'
 						target='_blank'
 						rel='noopener noreferrer'>
-						<img src={insta} alt='insta' className='insta' />
+						<picture>
+							<source
+								media='(max-width: 950px)'
+								srcSet={instaSmall}
+							/>
+							<img src={insta} alt='insta' className='insta' />
+						</picture>
 						<div className='textsocial'></div>
 					</a>
 				</div>
