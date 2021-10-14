@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../../Sass/Socials.scss';
 
@@ -14,13 +15,20 @@ const Socials = () => {
 		<div className='socialheader'>
 			<div className='logoBar'>
 				<div className='logoLinks'>
-					<a
+					<Link
+						to='/download/resume'
+						target='_blank'
+						rel='noopener noreferrer'>
+						<img src={resume} alt='resume' className='resume' />
+						<div className='textsocial resumetext'>Resume</div>
+					</Link>
+					{/* <a
 						href='https://drive.google.com/file/d/1wZMK_j8Hm5O1SEboyp8DOTslghSNNJnn/view?usp=sharing'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img src={resume} alt='resume' className='resume' />
 						<div className='textsocial resumetext'>Resume</div>
-					</a>
+					</a> */}
 					<a
 						href='https://github.com/danjhkim?tab=repositories'
 						target='_blank'

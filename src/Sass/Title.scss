@@ -136,3 +136,22 @@ $xxlarge: 1920px;
 		font-size: 0.8em;
 	}
 }
+
+@media screen and (max-height: 600px) {
+	.centerBox {
+		max-width: 400px;
+	}
+
+	.subtext {
+		margin-top: 0.3;
+		font-size: 0.8em;
+	}
+
+	.emailtext {
+		font-size: 0.8em;
+	}
+
+	.flowupemail {
+		margin-bottom: 1em;
+	}
+}
