@@ -25,7 +25,7 @@ const Socials = () => {
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img src={resume} alt='resume' className='resume' />
-						<div className='textsocial resumetext'>Resume</div>
+						<div className='textsocial resumetext'>Resumemeee</div>
 					</Link>
 					<a
 						href='https://github.com/danjhkim?tab=repositories'
