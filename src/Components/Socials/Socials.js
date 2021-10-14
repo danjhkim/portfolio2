@@ -11,24 +11,22 @@ import insta from '../../images/icons/insta.svg';
 import instaSmall from '../../images/icons/instaSmall.svg';
 
 const Socials = () => {
+	// const fetchResume = () => {
+
+	// }
+
 	return (
 		<div className='socialheader'>
 			<div className='logoBar'>
 				<div className='logoLinks'>
 					<Link
+						// onClick={fetchResume}
 						to='/download/resume'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img src={resume} alt='resume' className='resume' />
 						<div className='textsocial resumetext'>Resume</div>
 					</Link>
-					{/* <a
-						href='https://drive.google.com/file/d/1wZMK_j8Hm5O1SEboyp8DOTslghSNNJnn/view?usp=sharing'
-						target='_blank'
-						rel='noopener noreferrer'>
-						<img src={resume} alt='resume' className='resume' />
-						<div className='textsocial resumetext'>Resume</div>
-					</a> */}
 					<a
 						href='https://github.com/danjhkim?tab=repositories'
 						target='_blank'
