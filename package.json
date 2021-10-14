@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass": "sass src/Sass:src/Css --watch --no-source-map", 
-    "onchange": "onchange app/**/*.js' --watch -- npm build"
+    "onchange": "onchange app/**/*.js' -- npm build"
   },
   "eslintConfig": {
     "extends": [
