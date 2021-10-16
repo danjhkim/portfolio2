@@ -42,18 +42,17 @@ const Skills = () => {
 					<VerticalTimelineElement
 						className='vertical-timeline-element--work'
 						date={<Level min='4' />}
-						dateClassName={{ fontsize: '100em' }}
 						iconStyle={{
 							background: 'rgb(243, 204, 74)',
 							color: '#fff',
 						}}
-						icon={<Javascript />}>
+						icon={<Javascript className='largeIcon' />}>
 						<h3 className='vertical-timeline-element-title skillSubTitle'>
 							Javascript
 						</h3>
 						<div className='textBoxTime'>
 							<p className='timebigtext'>
-								Update to date with the latest technologies.
+								Up-to-date with the latest technologies.
 							</p>
 							<p className='timesmalltext'>
 								ES5 code, Asynchronous programming,
@@ -73,16 +72,17 @@ const Skills = () => {
 							background: 'rgb(33, 150, 243)',
 							color: '#fff',
 						}}
-						icon={<ReactIcon />}>
+						icon={<ReactIcon className='largeIcon' />}>
 						<h3 className='vertical-timeline-element-title skillSubTitle'>
 							React
 						</h3>
 						<div className='textBoxTime'>
 							<p className='timebigtext'>
-								Knowloedgeable of React libraries and features
+								Knowledgeable of React libraries and features
 							</p>
 							<p className='timesmalltext'>
-								JSX, state, props, Redux, Thunk, API calls
+								Responsive Design, Redux, Thunk, JSX, state,
+								props, API
 							</p>
 						</div>
 					</VerticalTimelineElement>
@@ -93,7 +93,7 @@ const Skills = () => {
 							background: '#c0dafb',
 							color: '#fff',
 						}}
-						icon={<CSSIcon />}>
+						icon={<CSSIcon className='largeIcon' />}>
 						<h3 className='vertical-timeline-element-title skillSubTitle'>
 							Cascading Style Sheets
 						</h3>
@@ -102,8 +102,8 @@ const Skills = () => {
 								Adept with CSS and Preprocessors
 							</p>
 							<p className='timesmalltext'>
-								SCSS, CSS Modules, Styled Components, Responsive
-								Design
+								SCSS, CSS Modules, Styled Components, Media
+								queries
 							</p>
 						</div>
 					</VerticalTimelineElement>
@@ -118,7 +118,7 @@ const Skills = () => {
 							background: '#45be96',
 							color: '#fff',
 						}}
-						icon={<GreenIcon />}>
+						icon={<GreenIcon className='largeIcon' />}>
 						<h3 className='vertical-timeline-element-title skillSubTitle'>
 							GreenSock
 						</h3>
@@ -138,7 +138,7 @@ const Skills = () => {
 							background: '#6ea0e2',
 							color: '#fff',
 						}}
-						icon={<AfterIcon />}>
+						icon={<AfterIcon className='largeIcon' />}>
 						<h3 className='vertical-timeline-element-title skillSubTitle'>
 							After Effects
 						</h3>
@@ -162,7 +162,7 @@ const Skills = () => {
 							background: '#05724e',
 							color: '#fff',
 						}}
-						icon={<NodeIcon />}>
+						icon={<NodeIcon className='largeIcon' />}>
 						<h3 className='vertical-timeline-element-title skillSubTitle'>
 							NodeJS
 						</h3>
@@ -184,7 +184,7 @@ const Skills = () => {
 							background: 'rgb(219, 236, 218)',
 							color: '#fff',
 						}}
-						icon={<MongoIcon />}>
+						icon={<MongoIcon className='largeIcon' />}>
 						<h3 className='vertical-timeline-element-title skillSubTitle'>
 							MongoDB
 						</h3>
@@ -208,7 +208,7 @@ const Skills = () => {
 							background: 'rgb(177, 177, 177)',
 							color: '#fff',
 						}}
-						icon={<GithubIcon />}>
+						icon={<GithubIcon className='largeIcon' />}>
 						<h3 className='vertical-timeline-element-title skillSubTitle'>
 							GitHub
 						</h3>
