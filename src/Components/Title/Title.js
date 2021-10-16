@@ -9,6 +9,8 @@ import '../../Sass/Title.scss';
 import email from '../../images/icons/email.svg';
 import danlogo from '../../images/animation/logo.json';
 
+import construct from '../../images/construct.png';
+
 const Title = () => {
 	gsap.registerPlugin(TextPlugin, ScrollTrigger);
 	const logo = useRef();
@@ -97,6 +99,14 @@ const Title = () => {
 		<div className='titleMain'>
 			<div className='fullscreen'>
 				<div className='centerBox'>
+					<a
+						href='https://www.danjhkim.com'
+						target='_blank'
+						rel='noreferrer'
+						className='construction'>
+						Check out version 1 of my portfolio in the mean time.
+						<img src={construct} alt='construction'></img>
+					</a>
 					<div className='logo' ref={logo}></div>
 					<div className='subtext'>
 						<span>Developer</span>
@@ -104,6 +114,7 @@ const Title = () => {
 						<span>Cannoli fan</span>
 					</div>
 				</div>
+
 				<div className='flowupemail'>
 					<div className='emaillink' onClick={mailer}>
 						<div className='icon'>
