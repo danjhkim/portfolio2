@@ -1,5 +1,47 @@
 .innerEdu {
   width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+}
+
+.schoolImg {
+  width: 40%;
+  background: url("../images/ryer.jpg") 0 fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (min-height: 1200px) {
+  .schoolImg {
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .schoolImg {
+    display: none;
+  }
+}
+
+.eduRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 60%;
+  height: fit-content;
   padding: 120px 0;
-  background-color: #f6f6f6;
+}
+.eduRight h2 {
+  text-align: center;
+  margin: 0 0 60px;
+  font-family: "Playfair Display,sans-serif";
+  margin: 0;
+  font-size: 70px;
+  font-weight: 300;
+  color: #073b7f;
+}
+@media only screen and (max-width: 1000px) {
+  .eduRight {
+    width: 100%;
+    padding: 80px 10px;
+  }
 }

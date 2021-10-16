@@ -31,6 +31,9 @@ function App() {
 					<section className='panel section4'>
 						<Education />
 					</section>
+					<section className='panel section3'>
+						<Skills />
+					</section>
 				</div>
 			</div>
 		</Router>
