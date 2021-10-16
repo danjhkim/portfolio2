@@ -1,3 +1,7 @@
+.about {
+	background-color: #f0f0f0;
+}
+
 .wrapper {
 	max-width: 1200px;
 
@@ -7,7 +11,7 @@
 	margin-left: auto;
 }
 
-.about {
+.aboutinner {
 	display: flex;
 	padding: 120px 30px 60px;
 	justify-content: space-between;
@@ -33,6 +37,21 @@
 		stroke: rgb(216, 216, 216);
 		fill: rgb(216, 216, 216);
 		color: rgb(216, 216, 216);
+	}
+
+	@media only screen and (max-width: 1000px) {
+		margin: 0 auto;
+
+		h2 {
+			margin: 0 auto;
+			width: fit-content;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		h2 {
+			font-size: 50px;
+		}
 	}
 }
 
@@ -64,6 +83,19 @@
 		margin: 0;
 		font-weight: 300;
 	}
+
+	@media only screen and (max-width: 500px) {
+		h3 {
+			font-size: 25px;
+			margin: 0 0 10px;
+		}
+
+		h4 {
+			font-size: 20px;
+		}
+
+		margin-left: 10px;
+	}
 }
 
 .school {
@@ -78,4 +110,18 @@
 .projects {
 	width: 55px;
 	height: auto;
+}
+
+.photoRight {
+	width: 400px;
+	height: 400px;
+	border-radius: 100%;
+	background-image: url(../images/face.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+
+	@media only screen and (max-width: 1000px) {
+		display: none;
+	}
 }

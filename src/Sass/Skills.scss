@@ -1,0 +1,88 @@
+.skills {
+	width: 100%;
+	background-color: #f7f7f7;
+	overflow: hidden;
+}
+
+.skillsInner {
+	padding: 120px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+
+.skillsTitle {
+	font-family: 'Playfair Display, sans-serif';
+	font-size: 70px;
+	font-weight: 300;
+	color: #073b7f;
+	margin: 0 0 80px;
+	@media only screen and (max-width: 600px) {
+		font-size: 50px;
+	}
+}
+
+.textBoxTime {
+	display: flex;
+	flex-flow: column;
+}
+
+.timebigtext {
+	font-size: 1.3em !important;
+	@media only screen and (max-width: 400px) {
+		font-size: 0.9em !important;
+	}
+}
+
+.skillSubTitle {
+	font-size: 2em;
+	@media only screen and (max-width: 530px) {
+		font-size: 1.5em;
+	}
+	@media only screen and (max-width: 405px) {
+		font-size: 1.2em;
+	}
+}
+
+.timesmalltext {
+	color: #073b7f !important;
+	font-size: 1em !important;
+	@media only screen and (max-width: 400px) {
+		font-size: 0.7em !important;
+	}
+	color: rgb(219, 236, 218);
+}
+.pushCloser {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.score {
+	border-radius: 0.25em;
+	box-shadow: 0 3px 0 #ddd;
+	color: #073b7f !important;
+	font-size: 1.5em !important;
+	box-sizing: border-box;
+	width: 70%;
+	padding: 1em;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media only screen and (max-width: 1169px) {
+		width: 100%;
+	}
+}
+
+.stars {
+	font-size: 50px;
+	@media only screen and (max-width: 460px) {
+		font-size: 25px;
+	}
+	@media only screen and (max-width: 320px) {
+		font-size: 19px;
+	}
+}

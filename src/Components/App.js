@@ -7,6 +7,8 @@ import Header from './Header/Header';
 import Title from './Title/Title';
 import About from './About/About';
 import Socials from './Socials/Socials';
+import Skills from './Skills/Skills';
+import Education from './Education/Education';
 
 function App() {
 	return (
@@ -22,6 +24,12 @@ function App() {
 					</section>
 					<section className='panel section2'>
 						<About />
+					</section>
+					<section className='panel section3'>
+						<Skills />
+					</section>
+					<section className='panel section4'>
+						<Education />
 					</section>
 				</div>
 			</div>

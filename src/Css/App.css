@@ -5,8 +5,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
 }
-
-.section1,
-.section2 {
-  background-color: #f0f0f0;
-}

@@ -20,12 +20,11 @@ const Socials = () => {
 			<div className='logoBar'>
 				<div className='logoLinks'>
 					<Link
-						// onClick={fetchResume}
 						to='/download/resume'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img src={resume} alt='resume' className='resume' />
-						<div className='textsocial resumetext'>Resumemeee</div>
+						<div className='textsocial resumetext'>Resume</div>
 					</Link>
 					<a
 						href='https://github.com/danjhkim?tab=repositories'

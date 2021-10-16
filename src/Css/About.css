@@ -1,3 +1,7 @@
+.about {
+  background-color: #f0f0f0;
+}
+
 .wrapper {
   max-width: 1200px;
   padding-right: 10px;
@@ -6,7 +10,7 @@
   margin-left: auto;
 }
 
-.about {
+.aboutinner {
   display: flex;
   padding: 120px 30px 60px;
   justify-content: space-between;
@@ -14,7 +18,7 @@
   width: 100%;
 }
 @media only screen and (max-width: 600px) {
-  .about {
+  .aboutinner {
     padding: 80px 10px;
   }
 }
@@ -34,6 +38,20 @@
   stroke: #d8d8d8;
   fill: #d8d8d8;
   color: #d8d8d8;
+}
+@media only screen and (max-width: 1000px) {
+  .aboutMe {
+    margin: 0 auto;
+  }
+  .aboutMe h2 {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .aboutMe h2 {
+    font-size: 50px;
+  }
 }
 
 .aboutItem {
@@ -64,6 +82,18 @@
   margin: 0;
   font-weight: 300;
 }
+@media only screen and (max-width: 500px) {
+  .itemText {
+    margin-left: 10px;
+  }
+  .itemText h3 {
+    font-size: 25px;
+    margin: 0 0 10px;
+  }
+  .itemText h4 {
+    font-size: 20px;
+  }
+}
 
 .school {
   width: 70px;
@@ -78,4 +108,19 @@
 .projects {
   width: 55px;
   height: auto;
+}
+
+.photoRight {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  background-image: url(../images/face.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media only screen and (max-width: 1000px) {
+  .photoRight {
+    display: none;
+  }
 }
