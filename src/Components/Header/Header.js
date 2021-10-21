@@ -77,18 +77,10 @@ const Header = () => {
 		<div className='bar_container'>
 			<div className='innerBar'>
 				<div className='navMenu'>
-					<span className='' href='' onClick={goAbout}>
-						About
-					</span>
-					<span className='' href='' onClick={goStack}>
-						Stack
-					</span>
-					<span className='' href='' onClick={goSamples}>
-						Samples
-					</span>
-					<span className='' href='' onClick={goContact}>
-						Contact
-					</span>
+					<span onClick={goAbout}>About</span>
+					<span onClick={goStack}>Stack</span>
+					<span onClick={goSamples}>Samples</span>
+					<span onClick={goContact}>Contact</span>
 				</div>
 			</div>
 		</div>
