@@ -41,7 +41,32 @@ const Skills = () => {
 				<VerticalTimeline>
 					<VerticalTimelineElement
 						className='vertical-timeline-element--work'
-						date={<Level min='4' />}
+						date={<Level min='5' />}
+						iconStyle={{
+							background: 'rgb(33, 150, 243)',
+							color: '#fff',
+						}}
+						icon={<ReactIcon className='largeIcon' />}>
+						<h3 className='vertical-timeline-element-title skillSubTitle'>
+							React
+						</h3>
+						<div className='textBoxTime'>
+							<p className='timebigtext'>
+								Knowledgeable of React libraries and features
+							</p>
+							<p className='timesmalltext'>
+								Responsive Design, Redux, Thunk, JSX, state,
+								props, API
+							</p>
+						</div>
+					</VerticalTimelineElement>
+					<VerticalTimelineElement
+						className='vertical-timeline-element--work'
+						date={
+							<div className='pushCloser'>
+								<Level min='4' />
+							</div>
+						}
 						iconStyle={{
 							background: 'rgb(243, 204, 74)',
 							color: '#fff',
@@ -58,31 +83,6 @@ const Skills = () => {
 								ES5 code, Asynchronous programming,
 								Object-oriented programming, Functional
 								programming
-							</p>
-						</div>
-					</VerticalTimelineElement>
-					<VerticalTimelineElement
-						className='vertical-timeline-element--work'
-						date={
-							<div className='pushCloser'>
-								<Level min='5' />
-							</div>
-						}
-						iconStyle={{
-							background: 'rgb(33, 150, 243)',
-							color: '#fff',
-						}}
-						icon={<ReactIcon className='largeIcon' />}>
-						<h3 className='vertical-timeline-element-title skillSubTitle'>
-							React
-						</h3>
-						<div className='textBoxTime'>
-							<p className='timebigtext'>
-								Knowledgeable of React libraries and features
-							</p>
-							<p className='timesmalltext'>
-								Responsive Design, Redux, Thunk, JSX, state,
-								props, API
 							</p>
 						</div>
 					</VerticalTimelineElement>
@@ -147,7 +147,7 @@ const Skills = () => {
 								Create motion graphics in JSON vector form
 							</p>
 							<p className='timesmalltext'>
-								Create animations from existing stil vectors
+								Create animations from existing still vectors
 							</p>
 						</div>
 					</VerticalTimelineElement>
@@ -189,9 +189,7 @@ const Skills = () => {
 							MongoDB
 						</h3>
 						<div className='textBoxTime'>
-							<p className='timebigtext'>
-								NoSQL database program
-							</p>
+							<p className='timebigtext'>NoSQL database</p>
 							<p className='timesmalltext'>
 								Schemas, CRUD operations
 							</p>
