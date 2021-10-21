@@ -99,14 +99,14 @@ const Title = () => {
 		<div className='titleMain'>
 			<div className='fullscreen'>
 				<div className='centerBox'>
-					<a
+					{/* <a
 						href='https://www.danjhkim.com'
 						target='_blank'
 						rel='noreferrer'
 						className='construction'>
 						Check out version 1 of my portfolio in the mean time.
 						<img src={construct} alt='construction'></img>
-					</a>
+					</a> */}
 					<div className='logo' ref={logo}></div>
 					<div className='subtext'>
 						<span>Developer</span>
