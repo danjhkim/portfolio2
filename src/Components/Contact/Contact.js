@@ -13,11 +13,15 @@ import insta from '../../images/icons/insta.svg';
 import instaSmall from '../../images/icons/instaSmall.svg';
 
 const Contact = () => {
+	const mailer = () => {
+		window.open('mailto:danjhkim@gmail.com');
+	};
+
 	return (
 		<div className='contact'>
 			<div className='titleBlock2'>Contact</div>
 			<div className='emailBlock'>
-				<div className='borderemail'>
+				<div className='borderemail' onClick={mailer}>
 					<div className='icon2'>
 						<img src={email} alt='email'></img>
 					</div>
