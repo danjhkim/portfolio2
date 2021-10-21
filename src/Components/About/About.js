@@ -7,7 +7,7 @@ import '../../Sass/About.scss';
 
 const About = () => {
 	return (
-		<div className='about'>
+		<div className='about' id='introduction'>
 			<div className='wrapper'>
 				<div className='aboutinner'>
 					<div className='aboutMe'>

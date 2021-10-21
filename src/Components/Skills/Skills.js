@@ -35,7 +35,7 @@ const Skills = () => {
 	};
 
 	return (
-		<div className='skills'>
+		<div className='skills' id='stack'>
 			<div className='skillsInner'>
 				<div className='skillsTitle'>Skill Set</div>
 				<VerticalTimeline>

@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React from 'react';
 import RyersonLogo from '../../images/ryerson.png';
 
 import '../../Sass/Education.scss';

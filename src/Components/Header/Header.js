@@ -9,6 +9,30 @@ import '../../Sass/Header.scss';
 const Header = () => {
 	gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
+	const goAbout = () => {
+		gsap.to(window, {
+			scrollTo: '#introduction',
+		});
+	};
+
+	const goStack = () => {
+		gsap.to(window, {
+			scrollTo: '#stack',
+		});
+	};
+
+	const goContact = () => {
+		gsap.to(window, {
+			scrollTo: '#contact',
+		});
+	};
+
+	const goSamples = () => {
+		gsap.to(window, {
+			scrollTo: '#samples',
+		});
+	};
+
 	const enter = useCallback(() => {
 		const texthead = gsap.utils.toArray('.navMenu span');
 
@@ -53,16 +77,16 @@ const Header = () => {
 		<div className='bar_container'>
 			<div className='innerBar'>
 				<div className='navMenu'>
-					<span className='' href=''>
+					<span className='' href='' onClick={goAbout}>
 						About
 					</span>
-					<span className='' href=''>
+					<span className='' href='' onClick={goStack}>
 						Stack
 					</span>
-					<span className='' href=''>
+					<span className='' href='' onClick={goSamples}>
 						Samples
 					</span>
-					<span className='' href=''>
+					<span className='' href='' onClick={goContact}>
 						Contact
 					</span>
 				</div>

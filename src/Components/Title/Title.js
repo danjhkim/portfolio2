@@ -9,8 +9,6 @@ import '../../Sass/Title.scss';
 import email from '../../images/icons/email.svg';
 import danlogo from '../../images/animation/logo.json';
 
-import construct from '../../images/construct.png';
-
 const Title = () => {
 	gsap.registerPlugin(TextPlugin, ScrollTrigger);
 	const logo = useRef();

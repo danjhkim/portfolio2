@@ -242,7 +242,7 @@ const Projects = () => {
 	};
 
 	return (
-		<div className='samples'>
+		<div className='samples' id='samples'>
 			<div className='titleBlock'>Samples</div>
 			<div className='mainSectionSamples'>
 				<div className='bodySample'>

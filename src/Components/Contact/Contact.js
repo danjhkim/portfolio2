@@ -6,10 +6,8 @@ import email from '../../images/icons/email.svg';
 import '../../Sass/Contact.scss';
 
 import resume from '../../images/icons/resume.svg';
-import github from '../../images/icons/github.svg';
 import gitSmall from '../../images/icons/githubSmall.svg';
 import linkedin from '../../images/icons/linked.svg';
-import insta from '../../images/icons/insta.svg';
 import instaSmall from '../../images/icons/instaSmall.svg';
 
 const Contact = () => {
@@ -18,7 +16,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className='contact'>
+		<div className='contact' id='contact'>
 			<div className='titleBlock2'>Contact</div>
 			<div className='emailBlock'>
 				<div className='borderemail' onClick={mailer}>
