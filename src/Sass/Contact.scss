@@ -1,0 +1,132 @@
+.contact {
+	width: 100%;
+	background-color: #073b7f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	color: #f6f6f6;
+	padding: 120px 0 0;
+}
+
+.titleBlock2 {
+	text-align: center;
+	font-family: 'Playfair Display,sans-serif';
+	margin: 0 0 50px;
+	font-size: 70px;
+	font-weight: 300;
+	color: #f6f6f6;
+	@media only screen and (max-width: 600px) {
+		font-size: 50px;
+	}
+}
+
+.emailBlock {
+	display: flex;
+	margin: 20px 0 20px;
+	font-size: 30px;
+	@media only screen and (max-width: 430px) {
+		font-size: 20px;
+	}
+}
+
+.icon2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0.5em;
+	img {
+		width: 30px;
+	}
+}
+
+.borderemail {
+	cursor: pointer;
+	box-sizing: border-box;
+	display: flex;
+	border: 3px solid transparent;
+	border-radius: 1em;
+	padding: 0.5em;
+	transition-duration: 0.2s;
+	&:hover {
+		border: 3px solid #f6f6f6;
+	}
+	margin-bottom: 1.4em;
+}
+
+.endlinks {
+	width: 50%;
+	@media only screen and (max-width: 950px) {
+		width: 100%;
+	}
+	margin-bottom: 120px;
+}
+
+.resumelower {
+	width: 25px;
+}
+
+.githublower {
+	margin-top: 0.2em;
+	width: 30px;
+}
+
+.Linkedlower {
+	width: 25px;
+}
+
+.instalower {
+	margin-top: 0.3em;
+	width: 25px;
+}
+
+.logoLinkslower {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	@media only screen and (max-width: 950px) {
+		justify-content: space-around;
+	}
+
+	a {
+		color: black;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		font-size: 25px;
+		margin-left: 10px;
+		font-weight: 500;
+		border: 3px solid transparent;
+		border-radius: 1em;
+		padding: 0.5em;
+		transition-duration: 0.3s;
+		img {
+			margin-right: 10px;
+			@media only screen and (max-width: 950px) {
+				margin: 0;
+			}
+		}
+		@media only screen and (max-width: 950px) {
+			margin: 0;
+		}
+
+		&:hover {
+			border: 3px solid white;
+		}
+	}
+}
+
+.footer {
+	width: 100%;
+	background-color: #073b7f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 0 30px;
+	font-size: 18px;
+	background-color: rgba(0, 0, 0, 0.1);
+	font-weight: 500;
+}

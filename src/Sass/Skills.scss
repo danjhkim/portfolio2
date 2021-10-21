@@ -92,4 +92,10 @@
 	height: 38px !important;
 	margin-left: -19px !important;
 	margin-top: -19px !important;
+	@media only screen and (max-width: 1169px) {
+		width: 20px !important;
+		height: 20px !important;
+		margin-left: -10px !important;
+		margin-top: -10px !important;
+	}
 }
