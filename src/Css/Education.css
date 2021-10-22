@@ -13,6 +13,7 @@
 @media only screen and (max-width: 1000px) {
   .schoolImg {
     display: none;
+    background: url("../images/ryersmall.jpg") 0 fixed;
   }
 }
 

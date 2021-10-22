@@ -5,10 +5,10 @@ import email from '../../images/icons/email.svg';
 
 import '../../Sass/Contact.scss';
 
-import resume from '../../images/icons/resume.svg';
-import gitSmall from '../../images/icons/githubSmall.svg';
-import linkedin from '../../images/icons/linked.svg';
-import instaSmall from '../../images/icons/instaSmall.svg';
+import { ReactComponent as Resume } from '../../images/icons/resumewhite.svg';
+import { ReactComponent as GitSmall } from '../../images/icons/githubwhite.svg';
+import { ReactComponent as Linkedin } from '../../images/icons/linkedwhite.svg';
+import { ReactComponent as InstaSmall } from '../../images/icons/instawhite.svg';
 
 const Contact = () => {
 	const mailer = () => {
@@ -32,49 +32,39 @@ const Contact = () => {
 						to='/download/resume'
 						target='_blank'
 						rel='noopener noreferrer'>
-						<img
-							src={resume}
-							alt='resume'
-							className='resumelower'
-						/>
-						<div className='textsociallower resumetext'>Resume</div>
+						<Resume className='resumelower' />
+						<div className='textsociallower linktext fontweight'>
+							Resume
+						</div>
 					</Link>
 					<a
 						href='https://github.com/danjhkim?tab=repositories'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<picture>
-							<img
-								src={gitSmall}
-								alt='github'
-								className='githublower'
-							/>
+							<GitSmall className='githublower' />
 						</picture>
-						<div className='textsociallower linktext'>GitHub</div>
+						<div className='textsociallower linktext fontweight'>
+							GitHub
+						</div>
 					</a>
 					<a
 						href='https://www.linkedin.com/in/daniel-kim-443a431b7/'
 						target='_blank'
 						rel='noopener noreferrer'>
-						<img
-							src={linkedin}
-							alt='Linked'
-							className='Linkedlower'
-						/>
-						<div className='textsociallower linktext'>Linked</div>
+						<Linkedin className='Linkedlower' />
+						<div className='textsociallower linktext fontweight'>
+							Linked
+						</div>
 					</a>
 					<a
 						href='https://www.instagram.com/danielkim165/'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<picture>
-							<img
-								src={instaSmall}
-								alt='insta'
-								className='instalower'
-							/>
+							<InstaSmall className='instalower' />
 						</picture>
-						<div className='textsociallower linktext'>
+						<div className='textsociallower linktext fontweight'>
 							instagram
 						</div>
 					</a>
