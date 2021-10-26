@@ -257,7 +257,7 @@ const Projects = () => {
 							}}>
 							<a
 								rel='noopener noreferrer'
-								href='https://protected-caverns-00050.herokuapp.com/surveys'
+								href='https://protected-caverns-00050.herokuapp.com'
 								target='_blank'>
 								<div className='column'>
 									<div className='greybox'></div>
