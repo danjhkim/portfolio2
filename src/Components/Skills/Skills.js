@@ -64,7 +64,7 @@ const Skills = () => {
 						className='vertical-timeline-element--work'
 						date={
 							<div className='pushCloser'>
-								<Level min='4' />
+								<Level min='3' />
 							</div>
 						}
 						iconStyle={{
@@ -155,7 +155,7 @@ const Skills = () => {
 						className='vertical-timeline-element--education'
 						date={
 							<div className='pushCloser'>
-								<Level min='4' />
+								<Level min='3' />
 							</div>
 						}
 						iconStyle={{

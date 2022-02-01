@@ -27,7 +27,7 @@ const About = () => {
 							</div>
 							<div className='itemText'>
 								<h3>Web Developer</h3>
-								<h4>React, Javascript, Node, Express</h4>
+								<h4>React, Javascript, Express</h4>
 							</div>
 						</div>
 						<div className='aboutItem'>
