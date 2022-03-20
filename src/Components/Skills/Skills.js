@@ -14,8 +14,6 @@ import { ReactComponent as AfterIcon } from '../../images/icons/aftereffects.svg
 import { ReactComponent as CSSIcon } from '../../images/icons/css.svg';
 import { ReactComponent as GithubIcon } from '../../images/icons/githubSmall.svg';
 import { ReactComponent as GreenIcon } from '../../images/icons/greensock.svg';
-import { ReactComponent as MongoIcon } from '../../images/icons/mongo.svg';
-import { ReactComponent as NodeIcon } from '../../images/icons/node.svg';
 
 import '../../Sass/Skills.scss';
 
@@ -148,50 +146,6 @@ const Skills = () => {
 							</p>
 							<p className='timesmalltext'>
 								Create animations from existing still vectors
-							</p>
-						</div>
-					</VerticalTimelineElement>
-					<VerticalTimelineElement
-						className='vertical-timeline-element--education'
-						date={
-							<div className='pushCloser'>
-								<Level min='3' />
-							</div>
-						}
-						iconStyle={{
-							background: '#05724e',
-							color: '#fff',
-						}}
-						icon={<NodeIcon className='largeIcon' />}>
-						<h3 className='vertical-timeline-element-title skillSubTitle'>
-							NodeJS
-						</h3>
-						<div className='textBoxTime'>
-							<p className='timebigtext'>
-								Javascript runtime environment for code
-								execution outside of browser
-							</p>
-							<p className='timesmalltext'>
-								ExpressJS, backend routing, Google OAuth,
-								PassportJS, Cookie authentication
-							</p>
-						</div>
-					</VerticalTimelineElement>
-					<VerticalTimelineElement
-						className='vertical-timeline-element--education'
-						date={<Level min='3' />}
-						iconStyle={{
-							background: 'rgb(219, 236, 218)',
-							color: '#fff',
-						}}
-						icon={<MongoIcon className='largeIcon' />}>
-						<h3 className='vertical-timeline-element-title skillSubTitle'>
-							MongoDB
-						</h3>
-						<div className='textBoxTime'>
-							<p className='timebigtext'>NoSQL database</p>
-							<p className='timesmalltext'>
-								Schemas, CRUD operations
 							</p>
 						</div>
 					</VerticalTimelineElement>

@@ -40,7 +40,6 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-					<div className='photoRight'></div>
 				</div>
 			</div>
 		</div>

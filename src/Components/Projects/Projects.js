@@ -3,6 +3,7 @@ import gsap, { TweenMax, ScrollToPlugin } from 'gsap/all';
 // import clock from '../images/images/clock.jpg';
 import weather from '../../images/weather.jpg';
 import gotham from '../../images/gotham.jpg';
+import wordle from '../../images/wordle.jpeg';
 import tools from '../../images/tools.jpg';
 // import calc from '../images/images/calc.jpg';
 // import metro from '../images/images/metro.jpg';
@@ -257,34 +258,6 @@ const Projects = () => {
 							}}>
 							<a
 								rel='noopener noreferrer'
-								href='https://protected-caverns-00050.herokuapp.com'
-								target='_blank'>
-								<div className='column'>
-									<div className='greybox'></div>
-									<div className='serviceBox'>
-										<div className='serviceBoxInner'>
-											<h2>Back-end Features</h2>
-											<p>
-												Simple front-end that showcases
-												multiple back-end features such
-												as MongoDB, PassportJS.
-											</p>
-										</div>
-										<div className='divtags'>
-											<p>
-												Tags: #PassportJS #Stripe
-												#MongoDB
-											</p>
-										</div>
-									</div>
-									<div className='picture contain'>
-										<img src={survey} alt='survey' />
-									</div>
-									<div className='title1'>Back-end</div>
-								</div>
-							</a>
-							<a
-								rel='noopener noreferrer'
 								href='https://vigorous-leakey-1df838.netlify.app'
 								target='_blank'>
 								<div className='column'>
@@ -339,6 +312,59 @@ const Projects = () => {
 									<div className='title1'>React</div>
 								</div>
 							</a>
+							<a
+								rel='noopener noreferrer'
+								href='https://competent-gates-f65dbb.netlify.app/'
+								target='_blank'>
+								<div className='column'>
+									<div className='greybox'></div>
+									<div className='serviceBox'>
+										<div className='serviceBoxInner'>
+											<h2>Wordle Clone!</h2>
+											<p>
+												Game created with vanilla
+												Javascript, CSS, and HTML. Play
+												as much as you want!
+											</p>
+										</div>
+										<div className='divtags'>
+											<p>Tags: #JavaScript #CSS #HTML</p>
+										</div>
+									</div>
+									<div className='picture contain'>
+										<img src={wordle} alt='wordle' />
+									</div>
+									<div className='title1'>Javascript</div>
+								</div>
+							</a>
+							<a
+								rel='noopener noreferrer'
+								href='https://protected-caverns-00050.herokuapp.com'
+								target='_blank'>
+								<div className='column'>
+									<div className='greybox'></div>
+									<div className='serviceBox'>
+										<div className='serviceBoxInner'>
+											<h2>Back-end Features</h2>
+											<p>
+												Simple front-end that with basic
+												back-end routing and
+												authentication.
+											</p>
+										</div>
+										<div className='divtags'>
+											<p>
+												Tags: #PassportJS #Stripe
+												#MongoDB
+											</p>
+										</div>
+									</div>
+									<div className='picture contain'>
+										<img src={survey} alt='survey' />
+									</div>
+									<div className='title1'>Back-end</div>
+								</div>
+							</a>
 							{/* <a
 								rel='noopener noreferrer'
 								href='https://danjhkim.com/Projects/clocker/'
@@ -368,7 +394,6 @@ const Projects = () => {
 									<div className='title1'>Javascript</div>
 								</div>
 							</a> */}
-
 							<a
 								rel='noopener noreferrer'
 								href='https://dreamy-bardeen-9c2d60.netlify.app'
