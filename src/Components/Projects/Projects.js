@@ -7,9 +7,10 @@ import wordle from '../../images/wordle.jpeg';
 import tools from '../../images/tools.jpg';
 // import calc from '../images/images/calc.jpg';
 // import metro from '../images/images/metro.jpg';
-import blogger from '../../images/blogger.jpg';
+import graphyq from '../../images/graphql.jpg';
 import game from '../../images/GAME.jpg';
 import survey from '../../images/surveydemo.jpg';
+import robots from '../../images/robots.jpg';
 import { isBrowser, isMobile } from 'react-device-detect';
 
 import '../../Sass/Projects.scss';
@@ -286,28 +287,26 @@ const Projects = () => {
 							</a>
 							<a
 								rel='noopener noreferrer'
-								href='https://boring-murdock-102b51.netlify.app'
+								href='https://graphql-app.adaptable.app/'
 								target='_blank'>
 								<div className='column'>
 									<div className='greybox'></div>
 									<div className='serviceBox'>
 										<div className='serviceBoxInner'>
-											<h2>React Blog Site</h2>
+											<h2>GraphQL Example Site</h2>
 											<p>
-												Simple site that uses Oauth to
-												login to google. Create, delete,
-												edit blogs!
+												Simple site that uses GraphQl to
+												filter and add data. (Free
+												hosting please wait for site to
+												Load.)
 											</p>
 										</div>
 										<div className='divtags'>
-											<p>
-												Tags: #React #Redux #REST
-												#CSS-Modules
-											</p>
+											<p>Tags: #React #Redux #GraphQL</p>
 										</div>
 									</div>
 									<div className='picture contain'>
-										<img src={blogger} alt='blogger' />
+										<img src={graphyq} alt='graphql' />
 									</div>
 									<div className='title1'>React</div>
 								</div>
@@ -334,7 +333,7 @@ const Projects = () => {
 									<div className='picture contain'>
 										<img src={wordle} alt='wordle' />
 									</div>
-									<div className='title1'>Javascript</div>
+									<div className='title1'>JS Game</div>
 								</div>
 							</a>
 							<a
@@ -345,24 +344,24 @@ const Projects = () => {
 									<div className='greybox'></div>
 									<div className='serviceBox'>
 										<div className='serviceBoxInner'>
-											<h2>Back-end Features</h2>
+											<h2>Filter and Search</h2>
 											<p>
-												Simple front-end that with basic
-												back-end routing and
-												authentication.
+												State changes in deeply nested
+												Objects and complex search and
+												filter Logic.
 											</p>
 										</div>
 										<div className='divtags'>
 											<p>
-												Tags: #PassportJS #Stripe
-												#MongoDB
+												Tags: #State, #Filters,
+												#Callbacks
 											</p>
 										</div>
 									</div>
 									<div className='picture contain'>
-										<img src={survey} alt='survey' />
+										<img src={robots} alt='robots' />
 									</div>
-									<div className='title1'>Back-end</div>
+									<div className='title1'>Search</div>
 								</div>
 							</a>
 							{/* <a
