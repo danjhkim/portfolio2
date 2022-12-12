@@ -338,7 +338,7 @@ const Projects = () => {
 							</a>
 							<a
 								rel='noopener noreferrer'
-								href='https://protected-caverns-00050.herokuapp.com'
+								href='https://danjhkim.github.io/updated-robot-filter-list/'
 								target='_blank'>
 								<div className='column'>
 									<div className='greybox'></div>
