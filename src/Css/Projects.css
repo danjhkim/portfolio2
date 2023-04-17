@@ -196,7 +196,7 @@
   max-width: 20px;
   height: 20px;
   position: absolute;
-  z-index: 999;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 700px) {
