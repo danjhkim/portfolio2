@@ -54,7 +54,7 @@ const Contact = () => {
 						rel='noopener noreferrer'>
 						<Linkedin className='Linkedlower' />
 						<div className='textsociallower linktext fontweight'>
-							Linked
+							LinkedIn
 						</div>
 					</a>
 					<a
