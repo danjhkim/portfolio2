@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import gsap, { TweenMax, ScrollToPlugin } from 'gsap/all';
 // import clock from '../images/images/clock.jpg';
 import weather from '../../images/weather.jpg';
@@ -12,8 +12,33 @@ import game from '../../images/GAME.jpg';
 import survey from '../../images/surveydemo.jpg';
 import robots from '../../images/robots.jpg';
 import { isBrowser, isMobile } from 'react-device-detect';
+import shipping from '../../images/shipping.jpg';
+import gitSmall from '../../images/icons/githubSmall.svg';
+import gitSmallHover from '../../images/icons/githubwhite.svg';
 
 import '../../Sass/Projects.scss';
+
+function ImgIcon({ alt }) {
+	const [hovering, setHovering] = useState(false);
+	const imgSrc = hovering ? gitSmallHover : gitSmall;
+
+	function handleMouseEnter() {
+		setHovering(true);
+	}
+
+	function handleMouseLeave() {
+		setHovering(false);
+	}
+
+	return (
+		<img
+			src={imgSrc}
+			alt={alt}
+			onMouseEnter={handleMouseEnter}
+			onMouseLeave={handleMouseLeave}
+		/>
+	);
+}
 
 const Projects = () => {
 	gsap.registerPlugin(ScrollToPlugin);
@@ -278,6 +303,13 @@ const Projects = () => {
 												#HTML
 											</p>
 										</div>
+										<a
+											className='gitProjectLink'
+											href='https://github.com/danjhkim/Gotham'
+											target='_blank'
+											rel='noopener noreferrer'>
+											<ImgIcon alt='Response Test App' />
+										</a>
 									</div>
 									<div className='picture contain'>
 										<img src={gotham} alt='gotham' />
@@ -304,6 +336,16 @@ const Projects = () => {
 										<div className='divtags'>
 											<p>Tags: #React #Redux #GraphQL</p>
 										</div>
+										<a
+											className='gitProjectLink'
+											href='https://github.com/danjhkim/graphql-app'
+											target='_blank'
+											rel='noopener noreferrer'>
+											<ImgIcon
+												src={gitSmall}
+												alt='GraphQl Book App'
+											/>
+										</a>
 									</div>
 									<div className='picture contain'>
 										<img src={graphyq} alt='graphql' />
@@ -329,6 +371,13 @@ const Projects = () => {
 										<div className='divtags'>
 											<p>Tags: #JavaScript #CSS #HTML</p>
 										</div>
+										<a
+											className='gitProjectLink'
+											href='https://github.com/danjhkim/wordle-clone'
+											target='_blank'
+											rel='noopener noreferrer'>
+											<ImgIcon alt='Wordle Clone' />
+										</a>
 									</div>
 									<div className='picture contain'>
 										<img src={wordle} alt='wordle' />
@@ -357,6 +406,13 @@ const Projects = () => {
 												#Callbacks
 											</p>
 										</div>
+										<a
+											className='gitProjectLink'
+											href='https://github.com/danjhkim/updated-robot-filter-list'
+											target='_blank'
+											rel='noopener noreferrer'>
+											<ImgIcon alt='Robot Filter' />
+										</a>
 									</div>
 									<div className='picture contain'>
 										<img src={robots} alt='robots' />
@@ -412,6 +468,13 @@ const Projects = () => {
 										<div className='divtags'>
 											<p>Tags: #React #Axios #REST</p>
 										</div>
+										<a
+											className='gitProjectLink'
+											href='https://github.com/danjhkim/weatherapp'
+											target='_blank'
+											rel='noopener noreferrer'>
+											<ImgIcon alt='Weather App' />
+										</a>
 									</div>
 									<div className='picture contain'>
 										<img src={weather} alt='weatherApp' />
@@ -440,6 +503,13 @@ const Projects = () => {
 												#REST
 											</p>
 										</div>
+										<a
+											className='gitProjectLink'
+											href='https://github.com/danjhkim/React-Hook-Widgets'
+											target='_blank'
+											rel='noopener noreferrer'>
+											<ImgIcon alt='React Widgets' />
+										</a>
 									</div>
 									<div className='picture cover'>
 										<img src={tools} alt='tools' />
@@ -523,11 +593,55 @@ const Projects = () => {
 										<div className='divtags'>
 											<p>Tags: #JavaScript</p>
 										</div>
+										<a
+											className='gitProjectLink'
+											href='https://github.com/danjhkim/gamer'
+											target='_blank'
+											rel='noopener noreferrer'>
+											<ImgIcon alt='Game' />
+										</a>
 									</div>
 									<div className='picture contain'>
 										<img src={game} alt='game' />
 									</div>
 									<div className='title1'>JS Game</div>
+								</div>
+							</a>
+							<a
+								rel='noopener noreferrer'
+								href='https://whimsical-dragon-6e6ad9.netlify.app/'
+								target='_blank'>
+								<div className='column'>
+									<div className='greybox'></div>
+									<div className='serviceBox'>
+										<div className='serviceBoxInner'>
+											<h2>Shipment App</h2>
+											<p>
+												A concept application for
+												tracking shipments. Using React
+												and TypeScript!
+											</p>
+										</div>
+										<div className='divtags'>
+											<p>Tags: #React-Saga #TypeScript</p>
+										</div>
+										<a
+											className='gitProjectLink'
+											href='https://github.com/danjhkim/shippingapp'
+											target='_blank'
+											rel='noopener noreferrer'>
+											<ImgIcon alt='Shipping App' />
+										</a>
+									</div>
+									<div className='picture contain'>
+										<img
+											src={shipping}
+											alt='shipping app'
+										/>
+									</div>
+									<div className='title1'>
+										Concept Shipping App!
+									</div>
 								</div>
 							</a>
 						</div>
